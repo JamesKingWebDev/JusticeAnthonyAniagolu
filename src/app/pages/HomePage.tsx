@@ -72,7 +72,7 @@ export function HomePage() {
         description: 'Commander of the Order of the Niger ',
         action: '1981',
       },
-      { 
+      {
         icon: Book,
         title: 'Knight of St. Sylvester',
         description: 'Knight-ed by the Catholic Church',
