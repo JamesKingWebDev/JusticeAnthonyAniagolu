@@ -2,48 +2,68 @@ import { Hero } from '../components/Hero';
 import { Timeline } from '../components/Timeline';
 import { StoryCard } from '../components/StoryCard';
 import { motion } from 'motion/react';
-import heroImage from 'figma:asset/3ce00a193c495df8134a4a017161a441b302cf2a.png';
+import heroImage from '../../assets/aniagolu.png';
+import aniagolu1 from '../../assets/aniagolu1.png';
+import aniagolu2 from '../../assets/aniagolu2.png';
+import aniagolu3 from '../../assets/aniagolu3.png';
+import aniagolu4 from '../../assets/aniagolu4.png';
+import aniagolu5 from '../../assets/aniagolu5.png';
+import aniagolu6 from '../../assets/aniagolu6.png';
+import aniagolu7 from '../../assets/aniagolu7.png';
+import aniagolu8 from '../../assets/aniagolu8.png';
+import aniagolu9 from '../../assets/aniagolu9.png';
+import aniagolu10 from '../../assets/aniagolu10.png';
 
 export function HistoryPage() {
   const timelineEvents = [
     {
-      year: '1918',
-      title: 'Early Life and Birth',
-      description: 'Born in Nigeria during a period of significant social and political change. His family instilled in him values of education, service, and integrity from an early age.',
+      year: '1922',
+      title: 'Anthony Nnaemezie Aniagolu is Born',
+      description: 'Justice Anthony Nnaemezie Aniagolu was one of Nigeria’s most distinguished jurists, whose judicial and constitutional career spanned more than four decades. Renowned for intellectual rigor, institutional discipline, and uncompromising fidelity to the rule of law, he played a foundational role in shaping Nigeria’s post-independence jurisprudence and constitutional development.',
       image: heroImage,
     },
     {
-      year: '1930s-1940s',
+      year: '1922-1952',
       title: 'Educational Journey',
-      description: 'Pursued formal education with distinction, showing early promise in academics and leadership. His passion for law and justice began to take shape during these formative years.',
+      description: 'Born on 22 October 1922 in Eke, Udi (present-day Enugu State), he demonstrated academic excellence from an early age. After studies at Government College, Umuahia and Christ the King College, Onitsha, he pursued legal education in the United Kingdom, earning his LL.B from the University of Bristol and being called to the Bar at Gray’s Inn, London, in July 1952. He was subsequently enrolled as a Barrister and Solicitor of the Supreme Court of Nigeria the same year.',
+      image: aniagolu4,
     },
     {
-      year: '1950s',
-      title: 'Legal Training and Early Practice',
-      description: 'Completed legal training and was called to the bar. Began practicing law, quickly establishing a reputation for thoroughness, integrity, and brilliant legal analysis.',
+      year: '1952–1965',
+      title: 'Early Legal Practice and Public Services',
+      description: 'Justice Aniagolu began his professional career in private legal practice (1952–1965), during which he established a reputation for competence and ethical firmness. He also held important public and professional roles, including: 1. Chairman, Nigerian Bar Association (Enugu Branch) (1962–1965): 2. Member, Disciplinary Committee, Bar Council of Nigeria (1962–1965) 3. Member, Federal Electoral Commission (1958–1965) 4. Member, Federal Nigerian Delimitation Commission (1963–1964) * These early engagements reflected his growing influence within Nigeria’s legal and institutional landscape.',
+      image: aniagolu9,
+    },
+    {
+      year: '1965-1987',
+      title: 'Judicial Career',
+      description: 'Justice Aniagolu was appointed a Judge of the High Court of Eastern Nigeria in 1965, marking the beginning of a distinguished judicial tenure. His rise through the judicial hierarchy was steady and merit-based: 1. High Court Judge, Eastern Nigeria (from 1965) 2. Acting Chief Judge, East Central State (1973) 3. Chief Judge, Anambra State (1976) 4. Justice, Supreme Court of Nigeria (1978–1987) * At the Supreme Court, he delivered numerous landmark judgments that contributed significantly to Nigerian constitutional law, procedural jurisprudence, and the doctrine of judicial independence. His decisions were widely respected for clarity of reasoning and doctrinal precision, and they continue to serve as authoritative reference points in Nigerian legal practice.',
+      image: aniagolu1,
+    },
+    {
+      year: '1988–1989',
+      title: 'Constitutional Leadership',
+      description: 'One of Justice Aniagolu’s most consequential national assignments was his appointment as Chairman of the 567-member Constituent Assembly (1988–1989), which drafted the 1989 Constitution of Nigeria. Under his leadership, the Assembly navigated complex and contentious issues—including debates around federalism and Shari’a jurisdiction—demonstrating his capacity for consensus building, procedural order, and constitutional statesmanship. His intellectual reflections on that process were later captured in his publication The Making of the 1989 Constitution of Nigeria, which remains an important source for scholars of Nigerian constitutional history.',
       image: heroImage,
     },
     {
-      year: '1960s',
-      title: 'Rising Legal Star',
-      description: 'Gained recognition as one of Nigeria\'s foremost legal minds. Handled significant cases and contributed to the development of Nigerian law during the early years of independence.',
+      year: '1966–1969',
+      title: 'Commissions and National Assignments',
+      description: 'Justice Aniagolu chaired several important commissions of inquiry, including: 1. Eastern Nigeria Development Corporation Commission of Enquiry (1966–1969) 2. Tribunal of Enquiry into the Kano Religious Disturbances (Maitatsine Riots) (1981) * In these roles, he was noted for fairness, independence, and principled adjudication in politically sensitive contexts.',
+      image: aniagolu7,
+
     },
     {
-      year: '1972',
-      title: 'Appointment to Supreme Court',
-      description: 'Appointed Justice of the Supreme Court of Nigeria, the highest judicial office in the land. This marked the beginning of his most influential period of service.',
-      image: heroImage,
+      year: '1983',
+      title: 'Judicial Philosophy and Ethical Legacy',
+      description: 'Justice Aniagolu was widely regarded as a fearless and incorruptible jurist. A defining episode of his career was his principled refusal, following the 1983 military coup, to assume the office of Chief Justice of Nigeria out of constitutional order of seniority. His stance reflected deep institutional loyalty to judicial hierarchy, constitutional protocol, and the separation of powers. He consistently articulated that judicial authority derives from moral responsibility and fidelity to justice. His published works and judicial pronouncements emphasize: 1. Judicial independence as the bedrock of the rule of law 2. Constitutionalism as a binding national covenant 3. Integrity and discipline as essential virtues of the Bench',
+      image: aniagolu10,
     },
     {
-      year: '1970s-1980s',
-      title: 'Landmark Decisions',
-      description: 'Delivered numerous landmark judgments that shaped Nigerian jurisprudence in areas including constitutional law, human rights, and criminal justice. His decisions continue to be cited as authoritative precedents.',
-    },
-    {
-      year: '1985',
-      title: 'Retirement and Continued Service',
-      description: 'Retired from active judicial service but continued to contribute to legal scholarship and mentor younger generations of lawyers and judges.',
-      image: heroImage,
+      year: 'To Date',
+      title: 'Enduring Significance',
+      description: 'Justice Anthony N. Aniagolu stands among the titans of Nigeria’s judicial history. His career represents a synthesis of scholarship, administrative leadership, constitutional stewardship, and ethical courage. His judgments, writings, and public service continue to inform legal discourse and serve as a model for judicial integrity within Nigeria\’s evolving constitutional democracy.This overview is suitable for placement within a digital memorial library as a concise yet authoritative account of his professional life and enduring institutional legacy.',
+      image: aniagolu9,
     },
   ];
 
@@ -51,48 +71,48 @@ export function HistoryPage() {
     {
       title: 'The Constitutional Guardian',
       excerpt: 'How Justice Aniagolu\'s interpretations of constitutional law helped establish fundamental principles that protect individual rights and limit governmental power in Nigeria.',
-      image: heroImage,
-      date: 'February 20, 2024',
+      image: aniagolu7,
+      date: 'February 20, 2026',
       category: 'Legal Legacy',
       link: '#',
     },
     {
       title: 'A Voice for the Voiceless',
       excerpt: 'Stories of how Justice Aniagolu used his position to ensure that even the most vulnerable members of society had access to justice and fair treatment under the law.',
-      image: heroImage,
-      date: 'February 18, 2024',
+      image: aniagolu5,
+      date: 'February 18, 2026',
       category: 'Human Rights',
       link: '#',
     },
     {
       title: 'Mentor to Generations',
       excerpt: 'The lasting impact of Justice Aniagolu\'s mentorship on countless lawyers, judges, and legal scholars who went on to distinguished careers of their own.',
-      image: heroImage,
-      date: 'February 15, 2024',
+      image: aniagolu6,
+      date: 'February 15, 2026',
       category: 'Education',
       link: '#',
     },
     {
       title: 'Scholarly Contributions',
       excerpt: 'An overview of Justice Aniagolu\'s extensive writings on legal theory, constitutional law, and judicial ethics that continue to influence legal thought.',
-      image: heroImage,
-      date: 'February 12, 2024',
+      image: aniagolu8,
+      date: 'February 12, 2026',
       category: 'Scholarship',
       link: '#',
     },
     {
       title: 'The Independence of the Judiciary',
       excerpt: 'How Justice Aniagolu stood firm in defending judicial independence during challenging political times, ensuring the courts remained true to their constitutional role.',
-      image: heroImage,
-      date: 'February 10, 2024',
+      image: aniagolu4,
+      date: 'February 10, 2026',
       category: 'Judicial Philosophy',
       link: '#',
     },
     {
       title: 'Personal Character and Integrity',
       excerpt: 'Colleagues and contemporaries remember Justice Aniagolu not just for his legal brilliance, but for his unwavering integrity and personal kindness.',
-      image: heroImage,
-      date: 'February 8, 2024',
+      image: aniagolu2,
+      date: 'February 8, 2026',
       category: 'Biography',
       link: '#',
     },

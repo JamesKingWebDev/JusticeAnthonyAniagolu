@@ -2,7 +2,7 @@ import { Hero } from '../components/Hero';
 import { motion } from 'motion/react';
 import { Mail, Phone, MapPin, Send, Heart, Users, Book } from 'lucide-react';
 import { useState } from 'react';
-import heroImage from 'figma:asset/3ce00a193c495df8134a4a017161a441b302cf2a.png';
+import heroImage from '../../assets/aniagolu.jpg';
 
 export function ContactPage() {
   const [formData, setFormData] = useState({

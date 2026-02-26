@@ -1,10 +1,65 @@
 import { Hero } from '../components/Hero';
+import { Timeline } from '../components/Timeline';
 import { motion } from 'motion/react';
 import { Scale, Heart, BookOpen, Award } from 'lucide-react';
-import heroImage from 'figma:asset/3ce00a193c495df8134a4a017161a441b302cf2a.png';
+import heroImage from '../../assets/aniagolu.png';
+import aniagolu1 from '../../assets/aniagolu1.png';
+import aniagolu2 from '../../assets/aniagolu2.png';
+import aniagolu3 from '../../assets/aniagolu3.png';
+import aniagolu4 from '../../assets/aniagolu4.png';
+import aniagolu5 from '../../assets/aniagolu5.png';
+import aniagolu6 from '../../assets/aniagolu6.png';
+import aniagolu7 from '../../assets/aniagolu7.png';
+import aniagolu8 from '../../assets/aniagolu8.png';
+import aniagolu9 from '../../assets/aniagolu9.png';
+import aniagolu10 from '../../assets/aniagolu10.png';
 
-export function AboutPage() {
-  const values = [
+export function 
+
+AboutPage() {
+  const timelineEvents = [
+      {
+        year: '1918',
+        title: 'Early Life and Birth',
+        description: 'Born in Nigeria during a period of significant social and political change. His family instilled in him values of education, service, and integrity from an early age.',
+        image: heroImage,
+      },
+      {
+        year: '1930s-1940s',
+        title: 'Educational Journey',
+        description: 'Pursued formal education with distinction, showing early promise in academics and leadership. His passion for law and justice began to take shape during these formative years.',
+      },
+      {
+        year: '1950s',
+        title: 'Legal Training and Early Practice',
+        description: 'Completed legal training and was called to the bar. Began practicing law, quickly establishing a reputation for thoroughness, integrity, and brilliant legal analysis.',
+        image: aniagolu9,
+      },
+      {
+        year: '1960s',
+        title: 'Rising Legal Star',
+        description: 'Gained recognition as one of Nigeria\'s foremost legal minds. Handled significant cases and contributed to the development of Nigerian law during the early years of independence.',
+      },
+      {
+        year: '1972',
+        title: 'Appointment to Supreme Court',
+        description: 'Appointed Justice of the Supreme Court of Nigeria, the highest judicial office in the land. This marked the beginning of his most influential period of service.',
+        image: heroImage,
+      },
+      {
+        year: '1970s-1980s',
+        title: 'Landmark Decisions',
+        description: 'Delivered numerous landmark judgments that shaped Nigerian jurisprudence in areas including constitutional law, human rights, and criminal justice. His decisions continue to be cited as authoritative precedents.',
+      },
+      {
+        year: '1985',
+        title: 'Retirement and Continued Service',
+        description: 'Retired from active judicial service but continued to contribute to legal scholarship and mentor younger generations of lawyers and judges.',
+        image: aniagolu10,
+      },
+    ];
+    
+    const values = [
     {
       icon: Scale,
       title: 'Justice',
@@ -197,6 +252,21 @@ export function AboutPage() {
           </div>
         </div>
       </section>
+      
+      {/* Timeline Section */}
+            <section className="py-20 bg-white">
+              <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="text-center mb-16">
+                  <h2 className="font-serif text-3xl md:text-4xl text-[#1A2B47] mb-4">
+                    Life & Career Timeline
+                  </h2>
+                  <p className="text-lg text-[#8B8478] max-w-2xl mx-auto">
+                    Follow the remarkable journey from early beginnings to becoming one of Nigeria's most respected jurists
+                  </p>
+                </div>
+                <Timeline events={timelineEvents} />
+              </div>
+            </section>
 
       {/* Mission Statement */}
       <section className="py-20 bg-[#1A2B47] text-white">

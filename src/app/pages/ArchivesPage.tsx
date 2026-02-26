@@ -3,7 +3,7 @@ import { Hero } from '../components/Hero';
 import { SearchFilter } from '../components/SearchFilter';
 import { motion } from 'motion/react';
 import { FileText, Download, ExternalLink, Calendar } from 'lucide-react';
-import heroImage from 'figma:asset/3ce00a193c495df8134a4a017161a441b302cf2a.png';
+import heroImage from '../../assets/aniagolu.jpg';
 
 interface ArchiveItem {
   title: string;

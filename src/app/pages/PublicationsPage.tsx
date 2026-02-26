@@ -1,10 +1,31 @@
 import { Hero } from '../components/Hero';
 import { motion } from 'motion/react';
 import { BookOpen, Download, ExternalLink } from 'lucide-react';
-import heroImage from 'figma:asset/3ce00a193c495df8134a4a017161a441b302cf2a.png';
+import heroImage from '../../assets/aniagolu.jpg';
 
 export function PublicationsPage() {
   const books = [
+    {
+      title: 'An address by the Hon. the Chief Judge of Anambra State, the Honourable Mr Justice A.N. Aniagolu to the Nigerian Bar Association at the Hotel Presidential, Enugu, Tuesday 24 August 1976',
+      author: 'Justice Anthony Aniagolu',
+      year: '1976',
+      description: 'Judicial address to the Nigerian Bar Association.',
+      pages: '356 pages',
+    },
+    {
+      title: 'The Making of the 1989 Constitution of Nigeria',
+      author: 'Justice Anthony Aniagolu',
+      year: '1993',
+      description: 'Detailed account of the drafting of the 1989 Constitution, including the challenges faced and the principles that guided its creation. A comprehensive overview of the state of the legal profession and the judiciary in Nigeria at the time.',
+      pages: '467 pages',
+    },
+    {
+      title: 'The Travails of Nigeria in Binding Herself into a Nation under the Constitution',
+      author: 'Justice Anthony Aniagolu',
+      year: '1991',
+      description: 'A comprehensive treatise on constitutional law, examining the Nigerian Constitution and its interpretationAnalysis of nation-building and constitutional challenges through landmark cases.',
+      pages: '236 pages',
+    },
     {
       title: 'Constitutional Law in Nigeria: Principles and Practice',
       author: 'Justice Anthony Aniagolu',
@@ -29,6 +50,12 @@ export function PublicationsPage() {
   ];
 
   const articles = [
+    {
+      title: 'Justice and Good Governance: A Challenge for Catholics',
+      publication: 'Nigerian Law Review',
+      year: '2000',
+      abstract: 'Discussion on governance, ethics, and Catholic social teaching.',
+    },
     {
       title: 'The Independence of the Judiciary in a Democratic Society',
       publication: 'Nigerian Law Review',

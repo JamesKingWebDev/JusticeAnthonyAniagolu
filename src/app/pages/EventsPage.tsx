@@ -1,7 +1,7 @@
 import { Hero } from '../components/Hero';
 import { motion } from 'motion/react';
 import { Calendar, MapPin, Clock, Users, ArrowRight } from 'lucide-react';
-import heroImage from 'figma:asset/3ce00a193c495df8134a4a017161a441b302cf2a.png';
+import heroImage from '../../assets/aniagolu.jpg';
 
 export function EventsPage() {
   const upcomingEvents = [

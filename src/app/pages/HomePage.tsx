@@ -1,9 +1,12 @@
 import { Hero } from '../components/Hero';
 import { StoryCard } from '../components/StoryCard';
 import { motion } from 'motion/react';
-import { ArrowRight, Book, Users, Award, Heart } from 'lucide-react';
+import { ArrowRight, Award, Mail, Phone, MapPin, Send, Heart, Users, Book } from 'lucide-react';
 import { Link } from 'react-router';
-import heroImage from 'figma:asset/3ce00a193c495df8134a4a017161a441b302cf2a.png';
+import heroImage from '../../assets/aniagolu.png';
+import aniagolu1 from '../../assets/aniagolu1.png';
+import aniagolu2 from '../../assets/aniagolu2.png';
+import aniagolu3 from '../../assets/aniagolu3.png';
 
 export function HomePage() {
   const features = [
@@ -33,28 +36,49 @@ export function HomePage() {
     {
       title: 'A Pioneer in Nigerian Jurisprudence',
       excerpt: 'Justice Anthony Aniagolu\'s groundbreaking contributions to Nigerian law shaped the foundation of modern legal practice in the nation.',
-      image: heroImage,
-      date: 'February 15, 2024',
+      image: aniagolu1,
+      date: 'February 15, 2026',
       category: 'Biography',
       link: '/history',
     },
     {
       title: 'The Supreme Court Years',
       excerpt: 'Explore the landmark cases and judicial philosophies that defined Justice Aniagolu\'s tenure on Nigeria\'s highest court.',
-      image: heroImage,
-      date: 'January 28, 2024',
+      image: aniagolu3,
+      date: 'January 28, 2026',
       category: 'Legal Career',
       link: '/history',
     },
     {
       title: 'Champion of Justice and Equality',
       excerpt: 'Throughout his career, Justice Aniagolu remained committed to upholding the principles of fairness and equal protection under the law.',
-      image: heroImage,
-      date: 'January 10, 2024',
+      image: aniagolu2,
+      date: 'January 10, 2026',
       category: 'Legacy',
       link: '/history',
     },
   ];
+
+  const supportOptions = [
+      {
+        icon: Heart,
+        title: 'OFR',
+        description: 'Officer of the Federal Republic',
+        action: '1964',
+      },
+      {
+        icon: Users,
+        title: 'CON',
+        description: 'Commander of the Order of the Niger ',
+        action: '1981',
+      },
+      {
+        icon: Book,
+        title: 'Knight of St. Sylvester',
+        description: 'Knight-ed by the Catholic Church',
+        action: 'with papal honors',
+      },
+    ];
 
   return (
     <div>
@@ -159,6 +183,45 @@ export function HomePage() {
             {highlightedStories.map((story, index) => (
               <StoryCard key={index} {...story} index={index} />
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Support Options */}
+      <section className="py-20 bg-[#FAF8F5]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-3xl md:text-4xl text-[#1A2B47] mb-4">
+              Awards & Professional Recognition
+            </h2>
+            <p className="text-lg text-[#8B8478] max-w-2xl mx-auto">
+              Justice Aniagolu was:
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {supportOptions.map((option, index) => {
+              const Icon = option.icon;
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="bg-white rounded-lg p-8 shadow-md hover:shadow-xl transition-all duration-300 text-center group"
+                >
+                  <div className="w-16 h-16 bg-[#C5A572] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#1A2B47] transition-colors">
+                    <Icon className="text-white" size={32} />
+                  </div>
+                  <h3 className="font-serif text-xl text-[#1A2B47] mb-4">{option.title}</h3>
+                  <p className="text-[#8B8478] leading-relaxed mb-6">{option.description}</p>
+                  <button className="px-6 py-3 bg-[#1A2B47] text-white rounded-md hover:bg-[#C5A572] transition-all duration-200 w-full">
+                    {option.action}
+                  </button>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>

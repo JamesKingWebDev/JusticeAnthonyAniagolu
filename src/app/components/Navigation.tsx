@@ -45,7 +45,7 @@ export function Navigation() {
               <span className="text-white font-serif font-semibold text-xl">A</span>
             </div>
             <div className="hidden sm:block">
-              <h1 className="font-serif font-semibold text-xl text-[#1A2B47]">Aniagolu Legacy</h1>
+              <h1 className="font-serif font-semibold text-xl text-[#1A2B47]">Aniagolu's Legacy</h1>
               <p className="text-xs text-[#8B8478]">Justice · Leadership · Service</p>
             </div>
           </Link>

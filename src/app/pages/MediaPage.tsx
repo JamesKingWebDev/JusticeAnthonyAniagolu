@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Hero } from '../components/Hero';
 import { motion } from 'motion/react';
 import { Play, Image as ImageIcon, Film, Mic } from 'lucide-react';
-import heroImage from 'figma:asset/3ce00a193c495df8134a4a017161a441b302cf2a.png';
+import heroImage from '../../assets/aniagolu.jpg';
 
 export function MediaPage() {
   const [activeTab, setActiveTab] = useState<'videos' | 'photos' | 'audio'>('videos');
